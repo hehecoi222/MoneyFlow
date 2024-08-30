@@ -68,7 +68,7 @@ internal class DatabaseSourceImpl(
                 AccountTable(
                     id = 1,
                     name = "Default Account",
-                    currency = Currency.EURO,
+                    currency = Currency.DONG,
                     amount = 0.0,
                 ),
             )

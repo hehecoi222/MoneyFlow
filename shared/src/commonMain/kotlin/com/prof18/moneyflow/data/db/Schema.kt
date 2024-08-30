@@ -36,7 +36,7 @@ internal object Schema : SqlDriver.Schema by MoneyFlowDB.Schema {
 
             accountTableQueries.insertAccount(
                 name = "Default Account",
-                currency = Currency.EURO,
+                currency = Currency.DONG,
                 amount = 0.0,
             )
 

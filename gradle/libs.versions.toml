@@ -32,6 +32,12 @@ timber = "5.0.1"
 turbine = "1.0.0"
 viewModel-ktx = "2.6.1"
 
+# Firebase
+firebase-bom = "33.2.0"
+
+# Gradle gservices
+gradle-gms = "4.4.2"
+
 [libraries]
 androidx-activity-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
 androidx-biometric-ktx = { module = "androidx.biometric:biometric-ktx", version.ref = "biometric" }
@@ -76,6 +82,10 @@ squareup-sqldelight-sqlite-driver = { module = "com.squareup.sqldelight:sqlite-d
 touchlab-kermit = { module = "co.touchlab:kermit", version.ref = "kermit" }
 io-gitlab-arturbosch-detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
 
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-firestore = { module = "com.google.firebase:firebase-firestore" }
+
 [bundles]
 androidx-test = ["androidx-test-core", "androidx-test-ext-junit", "androidx-test-rules", "androidx-test-runner"]
 compose = ["androidx-activity-activity-compose", "androidx-compose-foundation", "androidx-compose-material", "androidx-compose-material-icons-core", "androidx-compose-material-icons-extended", "androidx-compose-runtime", "androidx-compose-ui", "androidx-compose-ui-ui-test", "androidx-compose-ui-ui-tooling", "androidx-navigation-navigation-compose", "androidx-paging-paging-compose"]
@@ -92,3 +102,5 @@ kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref =
 versionsBenManes = { id = "com.github.ben-manes.versions", version.ref = "versions-ben-manes" }
 touchlab-kermit = { id = "co.touchlab.kermit", version.ref = "kermit" }
 sqldelight = { id = "com.squareup.sqldelight", version.ref = "sqlDelight" }
+
+google-services = { id = "com.google.gms.google-services", version.ref = "gradle-gms" }

@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.parcelize)
+    alias(libs.plugins.google.services)
 }
 
 val propertiesFile = file("$rootDir/local.properties")
@@ -82,6 +83,10 @@ dependencies {
     // TODO: think about removing and use the api from shared
     implementation(libs.dropbox.core)
     implementation(libs.androidx.biometric.ktx)
+
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.firestore)
+    implementation(libs.firebase.analytics)
 
     debugImplementation(libs.androidx.compose.ui.ui.tooling)
     androidTestImplementation(libs.androidx.compose.ui.ui.test)
